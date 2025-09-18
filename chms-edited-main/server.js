@@ -5,24 +5,24 @@ import cookieParser from "cookie-parser";
 import initializeDatabase from "./config/db.js";
 import createUserSchema from "./models/user.js";
 import createMinistrySchema from "./models/ministry.js";
-import createExpenseSchema from "./models/expense.js";
+// import createExpenseSchema from "./models/expense.js";
 import createEventSchema from "./models/event.js";
 import createMemberSchema from "./models/member.js";
-import createVolunteerSlotSchema from "./models/volunteer_slot.js";
-import createVolunteerAssignmentSchema from "./models/volenteer_assignment.js";
-import createMinistryTeamSchema from './models/ministry_team.js'
-import createDonationSchema from "./models/donation.js";
-import createDonationCampaignSchema from "./models/donation_campaign.js";
+// import createVolunteerSlotSchema from "./models/volunteer_slot.js";
+// import createVolunteerAssignmentSchema from "./models/volenteer_assignment.js";
+// import createMinistryTeamSchema from './models/ministry_team.js'
+// import createDonationSchema from "./models/donation.js";
+// import createDonationCampaignSchema from "./models/donation_campaign.js";
 
-import createTeamRoleSchema from "./models/team_role.js";
-import createSpiritualRecordSchema from "./models/spritual_Record.js";
-import createEventOccurrenceSchema from "./models/event_occurrence.js";
-import createCounselingSessionSchema from "./models/counseling_Session.js";
+// import createTeamRoleSchema from "./models/team_role.js";
+// import createSpiritualRecordSchema from "./models/spritual_Record.js";
+// import createEventOccurrenceSchema from "./models/event_occurrence.js";
+// import createCounselingSessionSchema from "./models/counseling_Session.js";
 // import createMemberSchema from './models/member.js';
-import createPastoralCareSchema from "./models/pastoral_care.js";
-import createAttendanceSchema from "./models/attendance.js";
-import createBudgetSchema from "./models/budget.js";
-import createFamilySchema from "./models/family.js";
+// import createPastoralCareSchema from "./models/pastoral_care.js";
+// import createAttendanceSchema from "./models/attendance.js";
+// import createBudgetSchema from "./models/budget.js";
+// import createFamilySchema from "./models/family.js";
 import createStaffSchema from "./models/staff.js";
 import routes from './routes/index.js'
 import createRefreshTokenSchema from "./models/refreshToken.js";
@@ -43,12 +43,12 @@ const schemaCreationFunctions = [
   
   
   // Tables with secondary dependencies
-  { fn: createEventOccurrenceSchema, name: 'EventOccurrence' },
-  { fn: createVolunteerSlotSchema, name: 'VolunteerSlot' },
+  // { fn: createEventOccurrenceSchema, name: 'EventOccurrence' },
+  // { fn: createVolunteerSlotSchema, name: 'VolunteerSlot' },
   { fn: createMemberSchema, name: 'Member' },
   { fn: createVolunteerAssignmentSchema, name: 'VolunteerAssignment' },
-  { fn: createTeamRoleSchema, name: 'TeamRole' },
-  { fn: createSpiritualRecordSchema, name: 'SpiritualRecord' },
+  // { fn: createTeamRoleSchema, name: 'TeamRole' },
+  // { fn: createSpiritualRecordSchema, name: 'SpiritualRecord' },
   { fn: createPastoralCareSchema, name: 'PastoralCare' },
   { fn: createExpenseSchema, name: 'Expense' },
   { fn: createDonationSchema, name: 'Donation' },
