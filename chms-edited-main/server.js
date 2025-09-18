@@ -13,7 +13,6 @@ import createVolunteerAssignmentSchema from "./models/volenteer_assignment.js";
 import createMinistryTeamSchema from './models/ministry_team.js'
 import createDonationSchema from "./models/donation.js";
 import createDonationCampaignSchema from "./models/donation_campaign.js";
-import createBibleStudySessionSchema from "./models/bible_study_session.js";
 import createBibleStudyMembershipSchema from "./models/bible_Study_Membership.js";
 import createBibleStudyGroupSchema from "./models/bible_Study_Group.js";
 import createTeamRoleSchema from "./models/team_role.js";
@@ -42,7 +41,7 @@ const schemaCreationFunctions = [
   { fn: createStaffSchema, name: 'Staff' },
   { fn: createEventSchema, name: 'Event' },
   { fn: createDonationCampaignSchema, name: 'DonationCampaign' },
-  { fn: createBibleStudyGroupSchema, name: 'BibleStudyGroup' },
+  
   
   // Tables with secondary dependencies
   { fn: createEventOccurrenceSchema, name: 'EventOccurrence' },
@@ -55,8 +54,6 @@ const schemaCreationFunctions = [
   { fn: createExpenseSchema, name: 'Expense' },
   { fn: createDonationSchema, name: 'Donation' },
   { fn: createCounselingSessionSchema, name: 'CounselingSession' },
-  { fn: createBibleStudySessionSchema, name: 'BibleStudySession' },
-  { fn: createBibleStudyMembershipSchema, name: 'BibleStudyMembership' },
   { fn: createAttendanceSchema, name: 'Attendance' }
 ];
 
