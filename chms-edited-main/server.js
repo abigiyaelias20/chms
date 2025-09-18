@@ -13,8 +13,7 @@ import createVolunteerAssignmentSchema from "./models/volenteer_assignment.js";
 import createMinistryTeamSchema from './models/ministry_team.js'
 import createDonationSchema from "./models/donation.js";
 import createDonationCampaignSchema from "./models/donation_campaign.js";
-import createBibleStudyMembershipSchema from "./models/bible_Study_Membership.js";
-import createBibleStudyGroupSchema from "./models/bible_Study_Group.js";
+
 import createTeamRoleSchema from "./models/team_role.js";
 import createSpiritualRecordSchema from "./models/spritual_Record.js";
 import createEventOccurrenceSchema from "./models/event_occurrence.js";
